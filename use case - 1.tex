@@ -1,0 +1,89 @@
+%!TeX encoding = UTF-8
+%!TeX spellcheck = en_US
+
+\documentclass[notitlepage]{article}
+\usepackage[left=2.cm,right=2.cm,top=.8cm,bottom=.8cm,includefoot,includehead,headheight=39pt]{geometry}
+% \geometry{letterpaper}
+
+% https://git.overleaf.com/2811329btybdm
+
+\usepackage[utf8]{inputenc}
+\usepackage{paralist}
+\usepackage{fullpage}
+
+\usepackage{titling}
+\usepackage{lipsum}
+\usepackage{framed}
+\usepackage{color}
+\usepackage{comment}
+
+\pretitle{\begin{center}\LARGE \bfseries Use-Case Specification: }
+\posttitle{\par\end{center}\vskip 0.5em}
+\date{}
+\author{}
+
+\renewcommand*\sectionmark[1]{\markboth{#1}{}}
+\renewcommand*\subsectionmark[1]{\markright{#1}}
+
+\newcommand{\name}[1]{%
+   \title{#1}
+   \maketitle
+}
+
+\includecomment{comment}
+
+\begin{document}
+   \name{$$Develop Project Charter$$}
+
+\vspace{-2cm}%   
+
+\section{Use-case description}
+
+\begin{comment}
+	{\noindent Development of project charter is the ability to let the user create a project charter.}
+\end{comment}
+
+% \lipsum[1]
+
+\section{Actor}
+
+\begin{comment}
+	{Project Manager/User}
+\end{comment}
+% \lipsum[1]
+\section{Preconditions}
+
+\begin{comment}
+	{The following preconditions have to be present:}
+\end{comment}
+
+\begin{itemize}
+  \item Project Statement of Work(SOW)
+  \item Business case
+  \item Agreement
+  \item Enterprise environmental factors
+  \item Organizational process assets 
+  \item List of Stakeholders
+\end{itemize}
+
+\section{Scenarios}\label{sec:scenarios}
+\begin{comment}
+	
+		\noindent 
+
+		\begin{itemize}
+		    \item The system allows the user to enter a project name
+		    \item The system will let a user to write SOW
+		    \item The user will enter the business case in the space provided
+  			\item Functional requirements are obtained from the user
+  			\item The user defines the high-level scope of the project
+  			\item Project milestones, assumption, constraints and dependencies are listed by the user
+  			\item The system asks for names and roles of stakeholders involved
+		\end{itemize}
+        
+	
+\end{comment}
+
+
+
+\end{document}
