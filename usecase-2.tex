@@ -1,0 +1,87 @@
+%!TeX encoding = UTF-8
+%!TeX spellcheck = en_US
+
+\documentclass[notitlepage]{article}
+\usepackage[left=2.cm,right=2.cm,top=.8cm,bottom=.8cm,includefoot,includehead,headheight=39pt]{geometry}
+% \geometry{letterpaper}
+
+% https://git.overleaf.com/2811329btybdm
+
+\usepackage[utf8]{inputenc}
+\usepackage{paralist}
+\usepackage{fullpage}
+
+\usepackage{titling}
+\usepackage{lipsum}
+\usepackage{framed}
+\usepackage{color}
+\usepackage{comment}
+
+\pretitle{\begin{center}\LARGE \bfseries Use-Case Specification: }
+\posttitle{\par\end{center}\vskip 0.5em}
+\date{}
+\author{}
+
+\renewcommand*\sectionmark[1]{\markboth{#1}{}}
+\renewcommand*\subsectionmark[1]{\markright{#1}}
+
+\newcommand{\name}[1]{%
+   \title{#1}
+   \maketitle
+}
+
+\includecomment{comment}
+
+\begin{document}
+   \name{Develop Project Management Plan}
+
+\vspace{-2cm}%   
+
+\section{Use-case description}
+
+\begin{comment}
+	{\noindent Project plan will include the documentation of requirements, defining scope and creating Work Breakdown Structure based on collected requirements.}
+\end{comment}
+
+% \lipsum[1]
+
+\section{Actor}
+
+\begin{comment}
+	{Project Manager/Colleagues }
+\end{comment}
+% \lipsum[1]
+\section{Preconditions}
+
+\begin{comment}
+	{The following preconditions have to be present:}
+\end{comment}
+
+\begin{itemize}
+  \item Project Charter
+  \item Project Statement of Work(SOW)
+  \item Requirements
+\end{itemize}
+
+\section{Scenarios}\label{sec:scenarios}
+\begin{comment}
+	
+		\noindent 
+
+		\begin{itemize}
+		    \item The user starts project planning by selecting Project--\textgreater Create Project Plan
+		    \item The system presents a panel with text-boxes to enter project requirements
+		    \item The user enters the collected requirements and scope definition
+		    \item The user inputs the timeline for the project by selecting date.
+		    \item In the budget section, the user enters the estimated cost of the project and budget resources.
+  			\item Functional requirements are obtained from the user
+  			\item The user adds the risk management section by clicking the add section button.
+  			\item The user saves the project plan and exists the system
+		\end{itemize}
+        
+	
+\end{comment}
+
+
+
+\end{document}
